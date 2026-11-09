@@ -105,7 +105,7 @@ class CuraEngine_gRPC_DefinitionsConan(ConanFile):
             raise ConanInvalidConfiguration(f"{self.ref} can not be built as shared on Visual Studio and msvc.")
 
     def build_requirements(self):
-        self.tool_requires("protobuf/7.36.2")
+        self.tool_requires("protobuf/6.33.5")
 
     def generate(self):
         tc = CMakeToolchain(self)
