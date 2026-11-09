@@ -88,7 +88,7 @@ class CuraEngine_gRPC_DefinitionsConan(ConanFile):
             self.cpp.build.includedirs = ["./generated"]
 
     def requirements(self):
-        self.requires("asio-grpc/3.5.0", transitive_headers = True)
+        self.requires("asio-grpc/3.7.0", transitive_headers = True)
 
     def validate(self):
         # validate the minimum cpp standard supported. For C++ projects only
